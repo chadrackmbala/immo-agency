@@ -17,6 +17,7 @@ import AchatBureau from './AchatBureau';
 import VenteBureau from './VenteBureau';
 import VenteMaison from './VenteMaison';
 import VenteAppartement from './VenteAppartement';
+import Ajout from './Ajout';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Layout />} >
             <Route index element={<HomePage />} />
             <Route path="/documentation" element={<Documentation />} />
+            <Route path="/ajout" element={<Ajout />} />
             <Route path="/gestion-locative" element={<GestionLocative />} />
             <Route path="/location" element={<Location />} />
             <Route path="/Vente" element={<Vente />} />

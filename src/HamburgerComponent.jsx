@@ -5,6 +5,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import NavLinks from "./NavLinks";
 import useMenuStore from "./Provider";
+import { ScrollFadeIn } from './ScrollFadeIn';
 
 function HamburgerComponent() {
 
@@ -32,13 +33,17 @@ function HamburgerComponent() {
             <Hamburger toggled={overLay} toggle={setOverLay} color="#ffffff" />
             {overLay && (
                 <div className="fixed inset-0 bg-white dark:bg-slate-900 text-black dark:text-white z-[9999]">
-                <div className="flex justify-end p-4">
-                    <Hamburger toggled={overLay} toggle={setOverLay} color="#ffffff" />
+                    <ScrollFadeIn>
+                    <div className="flex justify-end p-4">
+                        <Hamburger toggled={overLay} toggle={setOverLay} color="#ffffff" />
+                    </div>
+                    </ScrollFadeIn>
+                    <ScrollFadeIn>
+                        <main className="flex flex-col gap-3 items-start text-2xl text-left px-6 flex flex-col items-start text-2xl text-left px-6 pt-0">
+                            <NavLinks />
+                        </main>
+                    </ScrollFadeIn>
                 </div>
-                <main className="flex flex-col gap-3 items-start text-2xl text-left px-6 flex flex-col items-start text-2xl text-left px-6 pt-0">
-                    <NavLinks />
-                </main>
-            </div>
             )}
         </>
     );

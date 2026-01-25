@@ -42,7 +42,7 @@ function BackToTop() {
       }}
     >
       <FaArrowUp
-        className="w-5 h-5 transition-colors duration-300"
+        className="w-5 h-5 transition-colors duration-300 animate-bounce"
         color={hovered ? "#ffffff" : "#C7AD5D"}
       />
     </button>

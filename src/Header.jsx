@@ -5,6 +5,7 @@ import NavLinks from './NavLinks';
 import HamburgerComponent from './HamburgerComponent';
 import { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
+import { ScrollFadeIn } from './ScrollFadeIn';
 
 function Header() {
 
@@ -66,9 +67,12 @@ function Header() {
                     className={`transition-all duration-500 ease-in-out transform 
                     ${hideTopNav ? 'opacity-0 -translate-y-10 h-0 overflow-hidden' : 'opacity-100 translate-y-0 h-auto'}`}
                 >
-                    <div className="w-full flex justify-center pt-2">
-                        <SearchBar />
-                    </div>
+                    
+                    <ScrollFadeIn>
+                        <div className="w-full flex justify-center pt-2">
+                            <SearchBar />
+                        </div>
+                    </ScrollFadeIn>
                     <div className="h-[2px] w-screen bg-[#BFA75C] mt-2" />
                 </div>
                 <div className="flex items-center justify-between px-4 py-2 lg:px-8 lg:flex lg:justify-start lg:gap-45">

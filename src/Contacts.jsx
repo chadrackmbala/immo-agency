@@ -27,8 +27,8 @@ const scrollToTop = () => {
 function Contacts() {
 
     return (
-        <div>
-            <div className="flex mb-10 mt-10">
+        <div className='bg-[#FFF9E6]'>
+            <div className="flex pb-10 mt-10">
                 <div className="flex flex-col items-center pt-0 w-full">
                     <div className='flex flex-col items-center lg:flex-row lg:gap-130 lg:mt-10'>
                         <a href="#" className='mb-5'>

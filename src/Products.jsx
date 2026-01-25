@@ -19,6 +19,7 @@ import { Couple } from './images/index';
 import { Succes } from './images/index';
 import Button from '@mui/material/Button';
 import { Height } from '@mui/icons-material';
+import { ScrollFadeIn } from './ScrollFadeIn';
 
 function Products() {
 
@@ -40,9 +41,16 @@ function Products() {
 
   return (
     <div className='flex flex-col gap-5 items-center m-5 mt-15'>
-      <h2 className=' text-[30px] text-center'>Logements disponibles</h2>
+      <ScrollFadeIn>
+        <h2 className=' text-[30px] text-center'>Logements disponibles</h2>
+      </ScrollFadeIn>
+      
+      
+      
+      
       <div className='flex flex-wrap justify-center gap-10 lg:gap-x-15'>
-        <div className='flex flex-col items-center pb-3   gap-5'>
+        <ScrollFadeIn>
+          <div className='flex flex-col items-center pb-3   gap-5'>
           <div className='flex justify-center items-center p-2 bg-white rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.3,0.7,0.4,1.4)] [animation-fill-mode:forwards] hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:bg-[#ADD8E6] [animation-direction:alternate] [animation-iteration-count:infinite]'>
             <div className=''>
               <img src={House9} alt="logo" className="h-60 w-80 object-cover rounded-xl transition-transform group-hover:scale-110 duration-200" />
@@ -58,6 +66,8 @@ function Products() {
             </div>
           </div>
         </div>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
         <div className='flex flex-col items-center pb-3 gap-5'>
           <div className='flex justify-center items-center p-2 bg-white rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.3,0.7,0.4,1.4)] [animation-fill-mode:forwards] hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:bg-[#ADD8E6] [animation-direction:alternate] [animation-iteration-count:infinite]'>
             <div className=''>
@@ -74,6 +84,9 @@ function Products() {
             </div>
           </div>
         </div>
+      </ScrollFadeIn>
+      
+      <ScrollFadeIn>
         <div className='flex flex-col items-center pb-3 gap-5'>
           <div className='flex justify-center items-center p-2 bg-white rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.3,0.7,0.4,1.4)] [animation-fill-mode:forwards] hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:bg-[#ADD8E6] [animation-direction:alternate] [animation-iteration-count:infinite]'>
             <div className=''>
@@ -90,6 +103,8 @@ function Products() {
             </div>
           </div>
         </div>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
         <div className='flex flex-col items-center pb-3 gap-5'>
           <div className='flex justify-center items-center p-2 bg-white rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.3,0.7,0.4,1.4)] [animation-fill-mode:forwards] hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:bg-[#ADD8E6] [animation-direction:alternate] [animation-iteration-count:infinite]'>
             <div className=''>
@@ -106,6 +121,8 @@ function Products() {
             </div>
           </div>
         </div>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
         <div className='flex flex-col items-center pb-3 gap-5'>
           <div className='flex justify-center items-center p-2 bg-white rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.3,0.7,0.4,1.4)] [animation-fill-mode:forwards] hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:bg-[#ADD8E6] [animation-direction:alternate] [animation-iteration-count:infinite]'>
             <div className=''>
@@ -122,6 +139,8 @@ function Products() {
             </div>
           </div>
         </div>
+      </ScrollFadeIn>
+      <ScrollFadeIn>
         <div className='flex flex-col items-center pb-3 gap-5'>
           <div className='flex justify-center items-center p-2 bg-white rounded-[15px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.3,0.7,0.4,1.4)] [animation-fill-mode:forwards] hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)] hover:bg-[#ADD8E6] [animation-direction:alternate] [animation-iteration-count:infinite]'>
             <div className=''>
@@ -138,6 +157,7 @@ function Products() {
             </div>
           </div>
         </div>
+      </ScrollFadeIn>
       </div>
     </div>
   )

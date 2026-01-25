@@ -72,8 +72,8 @@ function Operations({ closeOperations }) {
             Location
           </h2>
           {openSubMenu === 'location'
-            ? <ExpandMoreIcon />
-            : <ChevronRightIcon />}
+            ? <ChevronRightIcon />
+            : <ExpandMoreIcon />}
         </div>
 
         {openSubMenu === 'location' && (
@@ -90,8 +90,8 @@ function Operations({ closeOperations }) {
             Vente
           </h2>
           {openSubMenu === 'vente'
-            ? <ExpandMoreIcon />
-            : <ChevronRightIcon />}
+            ? <ChevronRightIcon />
+            : <ExpandMoreIcon />}
         </div>
 
         {openSubMenu === 'vente' && (
@@ -108,8 +108,8 @@ function Operations({ closeOperations }) {
             Achat
           </h2>
           {openSubMenu === 'achat'
-            ? <ExpandMoreIcon />
-            : <ChevronRightIcon />}
+            ? <ChevronRightIcon />
+            : <ExpandMoreIcon />}
         </div>
 
         {openSubMenu === 'achat' && (

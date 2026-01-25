@@ -1,1 +1,44 @@
 @import "tailwindcss" ; 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@theme {
+  --animate-fadein-up: fadein-up 0.2s ease-out forwards;
+
+  @keyframes fadein-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+ 
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Défile exactement la moitié des logos */
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 8s linear infinite;
+}
+
+@media (max-width: 768px) {
+  /* Plus rapide sur mobile pour compenser la largeur réduite */
+  .animate-marquee {
+    animation-duration: 8s;
+  }
+}
+

@@ -91,6 +91,13 @@ function NavLinkComponent() {
             >
                 Documentation
             </NavLink>
+            <NavLink
+                to="/ajout"
+                onClick={() => closeAllMenus()}
+                className={({ isActive }) => isActive ? '!text-[#BFA75C]' : '!text-white hover:!text-sky-400'}
+            >
+                Ajout d'informations
+            </NavLink>
         </div>
     );
 }
