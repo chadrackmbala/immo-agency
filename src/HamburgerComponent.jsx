@@ -32,7 +32,7 @@ function HamburgerComponent() {
         <>
             <Hamburger toggled={overLay} toggle={setOverLay} color="#ffffff" />
             {overLay && (
-                <div className="fixed inset-0 bg-white dark:bg-slate-900 text-black dark:text-white z-[9999]">
+                <div className="fixed inset-0 bg-slate-900 dark:bg-slate-900 text-black dark:text-white z-[9999]">
                     <ScrollFadeIn>
                     <div className="flex justify-end p-4">
                         <Hamburger toggled={overLay} toggle={setOverLay} color="#ffffff" />

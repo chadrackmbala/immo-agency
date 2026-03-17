@@ -48,3 +48,10 @@ export { default as Succes } from "./Succes.jpeg";
 export { default as Accolade } from "./Accolade.jpeg";
 export { default as Accord } from "./Accord.jpeg";
 export { default as Couple } from "./Couple.jpeg";
+export { default as Vision } from "./Vision.jpg";
+
+export { default as Proprio1 } from "./Proprio1.jpeg";
+export { default as Proprio2 } from "./Proprio2.jpeg";
+export { default as Proprio3 } from "./Proprio3.png";
+export { default as Proprio4 } from "./Proprio4.jpeg";
+export { default as HowToUse } from "./HowToUse.png";

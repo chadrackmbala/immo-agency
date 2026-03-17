@@ -4,7 +4,7 @@ import Layout from './Layout';
 import HomePage from './HomePage';
 import AboutUs from './AboutUs';
 import Documentation from './Documentation';
-import GestionLocative from './GestionLocative';
+import OffreImmobiliere from './OffreImmobiliere';
 import Location from './Location';
 import Vente from './Vente';
 import Achat from './Achat';
@@ -18,6 +18,7 @@ import VenteBureau from './VenteBureau';
 import VenteMaison from './VenteMaison';
 import VenteAppartement from './VenteAppartement';
 import Ajout from './Ajout';
+import ContactForm from './ContactForm';
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="/documentation" element={<Documentation />} />
             <Route path="/ajout" element={<Ajout />} />
-            <Route path="/gestion-locative" element={<GestionLocative />} />
+            <Route path="/offre-immobiliere" element={<OffreImmobiliere />} />
+            <Route path="/contact-form" element={<ContactForm />} />
             <Route path="/location" element={<Location />} />
             <Route path="/Vente" element={<Vente />} />
             <Route path="/Achat" element={<Achat />} />

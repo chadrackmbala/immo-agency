@@ -77,11 +77,11 @@ function NavLinkComponent() {
 
             </div>
             <NavLink
-                to="/gestion-locative"
+                to="/offre-immobiliere"
                 onClick={() => closeAllMenus()}
                 className={({ isActive }) => isActive ? '!text-[#BFA75C]' : '!text-white hover:!text-sky-400'}
             >
-                Gestion locative
+                Offre Immobilière
             </NavLink>
 
             <NavLink

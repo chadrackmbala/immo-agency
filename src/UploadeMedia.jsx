@@ -18,7 +18,7 @@ function UploadImage() {
   return (
     <div style={{ padding: 20 }} className="flex flex-col justify-center items-center">
       <Button variant="contained" component="label">
-        Choisir une image
+        Choisir un fichier
         <input
           type="file"
           hidden

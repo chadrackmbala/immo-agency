@@ -6,6 +6,11 @@ const useMenuStore = create((set) => ({
   isOpen: false,
   setOpen: (value) => set({ isOpen: value }),
 
+  // 🔹 Popup formulaire
+
+  formOpen: false,
+  setFormOpen: (value) => set({ formOpen: value }),
+
   // 🔹 Overlay
   overLay: false,
   setOverLay: (value) => set({ overLay: value }),
